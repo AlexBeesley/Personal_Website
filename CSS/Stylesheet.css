@@ -1,0 +1,210 @@
+body {
+  color: #fff;
+  background-color: #8f96af;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  max-width: 175px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background: #8f96af;
+  box-shadow: 20px 20px 60px #7a8095, -20px -20px 60px #a4adc9;
+  position: inline;
+}
+
+#page-title,
+#page-subtitle {
+  font-weight: bold;
+  text-align: center;
+  position: inline;
+}
+
+h1,
+h2 {
+  position: inline;
+  color: #55e2c4;
+}
+
+.card {
+  border-radius: 50px;
+  background: #8f96af;
+  box-shadow: 20px 20px 60px #7a8095, -20px -20px 60px #a4adc9;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow:  20px 20px 60px #636879, -20px -20px 60px #bbc5e5;
+}
+
+.col-1 {
+  width: 33.33%;
+  float: left;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.col-2 {
+  width: 33.33%;
+  float: left;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.col-3 {
+  width: 33.33%;
+  float: left;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+#myCarousel {
+  border-radius: 5%;
+  padding: 1.5rem;
+  max-width: 500px;
+  height: auto;
+  position: flex;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  filter: none;
+}
+
+.img-carousel {
+  border-radius: 5%;
+}
+
+.icon-container {
+  width: 100%;
+  text-align: center;
+}
+
+i {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+i:hover {
+  color: #55e2c4;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* timeline */
+
+
+
+/* dark-mode toggle */
+
+.dark-mode-toggle {
+  padding-top: 1rem;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: -8px -4px 8px 0px #a4adc9, 8px 4px 12px 0px #a4adc9,
+    4px 4px 4px 0px #7a8095 inset, -4px -4px 4px 0px #7a8095 inset;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #55e2c4;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow: -8px -4px 8px 0px #a4adc9, 8px 4px 12px 0px #7a8095;
+}
+
+.toggle-state:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
+  background: #06221d;
+}
+
+/* dark-mode styles */
+.dark-mode-body {
+  background-color: #09342C;
+}
+
+.dark-mode-profile-pic {
+  background-color: #09342C;
+  box-shadow:  20px 20px 60px #06221d, -20px -20px 60px #0c463b;
+}
+
+.dark-mode-card {
+  background-color: #09342C;
+  box-shadow:  20px 20px 60px #06221d, -20px -20px 60px #0c463b;
+}
+
+.dark-mode-active-toggle {
+  box-shadow: 20px 20px 60px #0c463b, -20px -20px 60px #0c463b,
+    4px 4px 4px 0px #06221d inset, -4px -4px 4px 0px #06221d inset;
+}
+
+.dark-mode-indicator {
+    box-shadow: -8px -4px 8px 0px #0c463b, 8px 4px 12px 0px #0c463b,
+        4px 4px 4px 0px #06221d inset, -4px -4px 4px 0px #06221d inset;
+}
+
+.dark-mode-card:hover {
+  box-shadow:  20px 20px 60px #051d19, -20px -20px 60px #0d4b3f;
+}
+
+@media only screen and (max-width: 80rem) {
+  body {
+    overflow: unset;
+  }
+  .col-1 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+  }
+  .col-2 {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+  }
+  footer {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 50rem) {
+  body {
+    overflow: unset;
+  }
+  .col-1,
+  .col-2 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  footer {
+    position: relative;
+  }
+}
