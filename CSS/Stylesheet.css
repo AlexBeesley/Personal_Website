@@ -1,3 +1,4 @@
+/* main styles */
 body {
   color: #fff;
   background-color: #8f96af;
@@ -73,24 +74,6 @@ h3 {
   box-sizing: border-box;
 }
 
-#myCarousel {
-  border-radius: 5%;
-  padding: 1.5rem;
-  max-width: 500px;
-  height: auto;
-  position: flex;
-}
-
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-  filter: none;
-}
-
-.img-carousel {
-  border-radius: 5%;
-}
-
 .icon-container {
   width: 100%;
   text-align: center;
@@ -109,6 +92,25 @@ i:hover {
 footer {
   position: fixed;
   bottom: 0;
+}
+
+/* image carousel */
+#myCarousel {
+  border-radius: 5%;
+  padding: 1.5rem;
+  max-width: 500px;
+  height: auto;
+  position: flex;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  filter: none;
+}
+
+.img-carousel {
+  border-radius: 5%;
 }
 
 /* inital animation */
@@ -151,10 +153,6 @@ footer {
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
 }
-
-/* timeline */
-
-
 
 /* dark-mode toggle */
 
@@ -221,6 +219,7 @@ footer {
   box-shadow:  20px 20px 60px #051d19, -20px -20px 60px #0d4b3f;
 }
 
+/* responsivity */
 @media only screen and (max-width: 80rem) {
   body {
     overflow: unset;
