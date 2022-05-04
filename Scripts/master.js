@@ -12,4 +12,3 @@ function toggleDarkMode() {
     
     console.log("Dark Mode toggled");
   }
-

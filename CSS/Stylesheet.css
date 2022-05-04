@@ -28,8 +28,13 @@ body {
   position: inline;
 }
 
+#page-subtitle {
+  color: #fff;
+}
+
 h1,
-h2 {
+h2,
+h3 {
   position: inline;
   color: #55e2c4;
 }
