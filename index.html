@@ -5,6 +5,7 @@
     <title>Alexander Beesley</title>
     <meta charset="utf-8" name="Alexander Beesley"
         content="I am a 21-year-old .NET Developer Intern for The Pensions Regulator. I am currently working on a project to create a website for The Pensions Regulator.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="Images/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/25c5c1e8c2.js" crossorigin="anonymous"></script>
-    <script src="Scripts/master.js"></script>
+    <script src="Scripts/script.js"></script>
     <link rel="stylesheet" href="CSS/Stylesheet.css">
 </head>
 
@@ -27,28 +28,33 @@
         </label>
         <img src="Images/profile-pic.jpeg" alt="Alexander" title="Alexander" class="profile-pic" id="profile-pic">
         <h1 id="page-title">Alexander Beesley</h1>
-        <h3 id="page-subtitle">Based in Brighton, a 21-year-old .NET Developer Intern for The Pensions Regulator and a
-            Freelance Photographer.</h3>
+        <h2 id="page-subtitle">
+            Based in Brighton, a 21-year-old .NET Developer Intern for The Pensions Regulator and a
+            Freelance Photographer.
+        </h2>
     </header>
     <main>
         <div class="row">
             <div class="col-1">
-                <div class="card animated animatedFadeInUp fadeInUp" id="aboutmecard">
-                    <h2>About Me</h2>
-                    <p>I am a 21-year-old .NET Developer Intern for The Pensions Regulator. I am currently working on a
+                <article class="card animated animatedFadeInUp fadeInUp" id="aboutmecard">
+                    <h3>About Me</h3>
+                    <p>
+                        I am a 21-year-old .NET Developer Intern for The Pensions Regulator. I am currently working on a
                         project to create a website for The Pensions Regulator. I am a self-taught programmer and I have
                         a passion for learning new technologies and languages. I am currently learning C# and
                         JavaScript. I am also a student at the University of Brighton, studing Computer Science with
-                        Artificial Intelligence.</p>
-                    <p>What started as a hobby, my passion for photography has grown into freelance work I undertake
-                        around Brighton,
-                        having done work for the Brighton Female Skate Collective and for some of my friends who study
-                        fashion. </p>
-                </div>
+                        Artificial Intelligence.
+                    </p>
+                    <p>
+                        What started as a hobby, my passion for photography has grown into freelance work I undertake
+                        around Brighton, having done work for the Brighton Female Skate Collective and for some of my friends 
+                        who study fashion.
+                    </p>
+                </article>
             </div>
             <div class="col-2">
-                <div class="card animated animatedFadeInUp fadeInUp" id="photocard">
-                    <h2>My Photography</h2>
+                <article class="card animated animatedFadeInUp fadeInUp" id="photocard">
+                    <h3>My Photography</h3>
                     <div id="myCarousel" class="carousel slide" data-interval="10000" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -101,11 +107,11 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                </div>
+                </article>
             </div>
             <div class="col-3">
-                <div class="card animated animatedFadeInUp fadeInUp" id="timelinecard">
-                    <h2>Timeline</h2>
+                <article class="card animated animatedFadeInUp fadeInUp" id="timelinecard">
+                    <h3>Timeline</h3>
                     <div>
                         <div class="timeline">
                             <div class="container left">
@@ -122,9 +128,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card animated animatedFadeInUp fadeInUp" id="contactcard">
-                    <h2>Contact</h2>
+                </article>
+                <article class="card animated animatedFadeInUp fadeInUp" id="contactcard">
+                    <h3>Contact</h3>
                     <div class="icon-container">
                         <a href="mailto:david.beesley@tpr.gov.uk" alt="Email" title="Email"><i
                                 class="fa-solid fa-envelope"></i></a>
@@ -135,7 +141,7 @@
                         <a href="https://github.com/DABeesleyTPR" target="_blank" alt="GitHub" title="GitHub"><i
                                 class="fa-brands fa-github"></i></a>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
         </div>
